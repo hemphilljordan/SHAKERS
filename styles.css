@@ -1,0 +1,173 @@
+header {
+    position: sticky;
+    top: 0;
+    background-color: #FFF;
+    color: white;
+    padding: 15px 110px;
+    text-align: center;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+}
+
+header a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 300;
+    transition: color 0.3s ease;
+    padding: 20px;
+}
+
+header a:hover {
+    color: #000
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content {
+    height: 2000px;
+    padding: 20px 130px;
+}
+
+.main-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%; /* Optional: set a width */
+      height: auto;
+    }
+
+.cigars {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 90px 120px;
+}
+
+.cigar-image img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+.cigar-image {
+      flex: 0 0 300px;
+    }
+
+.right-cigar {
+      flex: 0 0 60%;
+      font-family: 'Open Sans', sans-serif;
+      color: #333;
+    }
+
+.title {
+      font-family: 'Cardo', serif;
+      font-weight: 700;
+      font-size: 48px;
+      margin-top: 0;
+    }
+
+.brown-text {
+    font-weight: 600;
+    color: rgb(174, 138, 47);
+}
+
+.paragraph {
+    max-width: 600px;           /* limit line width for better readability */
+  line-height: 1.6;           /* space between lines */
+  white-space: normal;        /* ensures text wraps */
+  margin-bottom: 1em;         /* spacing below */
+}
+
+.cigar-button {
+  display: inline-block;
+  background-color: #000;      /* black background */
+  color: #fff;                 /* white text */
+  padding: 12px 24px;          /* size of button */
+  text-decoration: none;       /* remove underline */
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cigar-button:hover {
+  background-color: #333;      /* slightly lighter black on hover */
+}
+
+.info {
+    display: inline-flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.info h1 {
+    font-family: 'Cardo', serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.footer .brown-text {
+    font-family: 'Cardo', serif;
+    color: rgb(174, 138, 47);
+    font-size: 25px;
+}
+
+.footer {
+  width: 80%;            /* or a fixed width like 600px */
+  margin: 60px auto 0;   /* top margin + auto left/right for centering */
+  padding: 40px;
+  text-align: center;    /* center text inside */
+}
+
+.left-info, .right-info {
+    padding: 50px;
+    text-align: left;
+}
+
+.top, .bottom {
+    padding: 30px;
+}
+
+.social-icons {
+    display: flex;
+  justify-content: center; /* centers the icons horizontally */
+  gap: 20px;               /* space between the icons */
+  margin: 0 auto;          /* centers the container if it has a width */
+  padding: 20px 0;     
+}
+
+.social-icons .icon {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  filter: grayscale(100%) brightness(70%); /* makes icons grey */
+  transition: filter 0.3s ease;
+}
+
+.social-icons .icon:hover {
+  filter: grayscale(0%) brightness(0%); /* color on hover */
+}
+
+
+.logo-footer {
+    height: 90px;
+    width: auto;
+     display: flex;
+  justify-content: center; /* centers the icons horizontally */
+  gap: 20px;               /* space between the icons */
+  margin: 0 auto;          /* centers the container if it has a width */
+  padding: 20px 0;    
+}
