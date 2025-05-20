@@ -427,9 +427,15 @@ header a:hover {
   body {
     padding-top: 80px; /* adjust based on header height */
   }
-  
+
 .cigar-image {
   display: none;
+}
+
+.main-image {
+   width: 100vw; /* full viewport width */
+    height: auto; /* keep aspect ratio */
+    object-fit: contain; 
 }
 
 }
