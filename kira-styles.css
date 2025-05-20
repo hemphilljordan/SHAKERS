@@ -1,0 +1,236 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-size: cover; /
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  background-position: center center; 
+}
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: center;   /* horizontally center */
+  align-items: center;       /* vertically center */
+  height: 100px;             /* adjust as needed */
+  padding: 0 20px;
+  background-color: #FFF;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+#brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0; /* optional spacing */
+}
+
+#site-header {
+  display: flex;
+  justify-content: center;   /* horizontally center */
+  align-items: center;       /* vertically center */
+  height: 100px;             /* adjust as needed */
+  padding: 0 20px;
+  background-color: #FFF;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#brand img {
+  max-height: 80px;          /* ensures it fits nicely */
+  width: auto;
+  display: block;
+}
+
+
+.mobile-image {
+    width: 100vw;
+}
+
+.cigar-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-family: 'Cardo';
+    font-size: 48px;
+}
+
+.brown-mobile {
+    font-family: 'Open Sans', sans-serif;
+  color: rgb(174, 138, 47);
+  padding: 15px;
+}
+
+.paragraph-mobile {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 25px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.brown-foot-mobile {
+     color: rgb(174, 138, 47);
+     font-family: 'Cardo';
+     font-size: 18px;
+     text-align: center;
+     margin-top: 50px;
+}
+
+.time-mobile {
+      font-family: 'Cardo';
+     font-size: 18px;
+     text-align: center;
+     margin-top: 20px;
+     margin-bottom: 15px;
+}
+
+.deets-mobile {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+.deets-mobile a {
+    text-decoration: none;
+    color: #000;
+}
+
+.cigar-button-mobile {
+  display: inline-block;
+  background-color: #000;      /* black background */
+  color: #fff;                 /* white text */
+  padding: 12px 24px;          /* size of button */
+  text-decoration: none;       /* remove underline */
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+   margin-top: 3rem; /* Adjust as needed */
+   margin-left: 20px;
+}
+
+
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Questrial', sans-serif;
+}
+
+ul a {
+  color: #000;
+}
+
+ul a:hover {
+  color: #F49384;
+  transition: 0.5s;
+}
+
+ul li {
+  padding-right: 80px;
+  margin-left: 10px;
+}
+
+
+
+
+
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+
+
+#hamburger-icon div{
+  width: 35px;
+  height: 3px;
+  background-color: #000;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  font-family: 'Cardo', sans-serif;
+  z-index: -1;
+  padding: 80px 0;
+}
+
+.mobile-menu li {
+  margin-top: 40px;
+  font-size: 20px;
+  padding: 2px;
+}
+
+.footer-line-mobile {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+
+  .header-links {
+    display: none;
+  }
+  
+  } 
+
