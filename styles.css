@@ -29,6 +29,29 @@ header a:hover {
     color: #000
 }
 
+.menu .nav-link {
+  color: #000;
+  text-decoration: none;
+  padding: 20px;
+  font-weight: 250;
+}
+
+.active-link {
+  position: relative;
+  padding-bottom: 2px; /* adjust spacing as needed */
+}
+
+.active-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%; /* controls length of the underline */
+  height: .5px;
+  background-color: currentColor;
+}
+
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
