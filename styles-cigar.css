@@ -386,6 +386,7 @@ header a:hover {
   cursor: pointer;
 }
 
+
 /* Mobile styles: hide menu, show hamburger */
 @media (max-width: 768px) {
   .menu {
@@ -412,4 +413,23 @@ header a:hover {
   #site-header {
     position: relative;
   }
+  header#site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;  /* make sure it’s above other content */
+    background-color: white; /* ensure background covers content below */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* optional, for separation */
+  }
+
+  /* Optional: add padding to body to avoid content hiding under fixed header */
+  body {
+    padding-top: 80px; /* adjust based on header height */
+  }
+  
+.cigar-image {
+  display: none;
+}
+
 }
