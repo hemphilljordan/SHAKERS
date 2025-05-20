@@ -305,7 +305,7 @@ header a:hover {
     }
 
 .right-cigar {
-      flex: 0 0 60%;
+      flex: 0 0 60%; 
       font-family: 'Open Sans', sans-serif;
       color: #333;
       margin: 0;
@@ -428,14 +428,73 @@ header a:hover {
     padding-top: 80px; /* adjust based on header height */
   }
 
-.cigar-image {
+
+.cigar-image img, .cigar-image {
   display: none;
+} 
+
+.main {
+  width: 100vw;
 }
 
-.main-image {
-   width: 100vw; /* full viewport width */
-    height: auto; /* keep aspect ratio */
-    object-fit: contain; 
+.main-image img{
+  width: 100vw;
+    display: block;
+  margin: 0 auto;
 }
+
+
+
+ .cigars {
+    flex-direction: column; 
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+    width: 100vw;
+     box-sizing: border-box;
+  }
+
+  .cigars p, .cigars h1, .cigars a {
+  text-align: center;
+}
+
+  .right-cigar {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    flex: 0 0 100% !important;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .paragraph, .brown-text {
+     width: 100%;
+    max-width: 100%;
+    margin: 0 auto 1em auto;
+    padding: 10px;
+  }
+
+  .cigar-button {
+    margin: 1.5rem auto 0 auto;
+  }
+
+   .left-info, .right-info {
+    padding: 20px;
+    text-align: center;
+  }
+
+   .info {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .info a, .info p {
+    text-align: center;
+  }
+
+  .footer {
+    text-align: center;
+  }
 
 }
