@@ -1,80 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="styles-cigar.css">
-    <title>Document</title>
+   
+  <link rel="stylesheet" type="text/css" href="kira-styles.css">
+  <title>Shaker's Cigar Bar</title>
+  
 </head>
 <body>
-
-     <header id="site-header">
-        <a href="index.html"><img src="images/logo.png" alt="" class="logo"></a> 
-        <div class="menu">
-            <span class="nav-link active-link">ABOUT</span>
-               <a href="cigar.html">CIGARS</a>
-            <a href="whiskey.html">WHISKEY</a>
-            <a href="about.html">SPIRITS</a>
-            <a href="cocktails.html">COCKTAILS</a>
-            <a href="about.html">GHOST TOURS</a>
-        </div>
-    </header>
-
-    <div class="main">
-         <div class="main-image">
-             <img src="images/about.jpg">
-        </div>
-        <h1 class="cigar-title">About</h1>
-        <p>Recently named one of "America’s 5 Most Haunted Bars" by The Huffington Post and chosen as one of the most haunted restaurants in the country by Thrillist, it's no secret that the spirits at Shaker's don't stop at the bar. 
-
-Our friendly, knowledgable tour guides hold nightly in-house ghost tours and 3 seasonal, one-of-a-kind walking tours: The Whoring 20's, The Milwauking Dead, and the Cream City Cannibal tour, which follows the footsteps of Milwaukee's most infamous resident, Jeffrey Dahmer.
-
-Call us at 414-272-4222 to book a tour. </p>
-       
-
+  <header>
+    <div id="brand"><a href="index.html"><img src="images/logo.png"></a></div>
+    <nav>
+      <ul>
+        <li><a href="about.html" class="selected-page">About</a></li>
+        <li><a href="cigars.html">Cigars</a></li>
+        <li><a href="portfolio.html">Whiskey</a></li>
+        <li><a href="headshots.html">Spirits</a></li>
+        <li><a href="cocktails.html">Cocktails</a></li>
+        <li><a href="ghost-tour.html">Ghost Tours</a></li>
+      </ul>
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+        <li><a href="about.html">About</a></li>
+        <li><a href="cigars.html">Cigars</a></li>
+        <li><a href="portfolio.html">Whiskey</a></li>
+        <li><a href="headshots.html">Spirits</a></li>
+        <li><a href="cocktails.html">Cocktails</a></li>
+        <li><a href="ghost-tour.html">Ghost Tours</a></li>
+      </ul>
     </div>
-        <hr class="footer-line">
-       <div class="footer">
-        <p class="brown-text">The World's Finest Cigar Bar</p>
-        <div class="info">
-            <div class="left-info">
-                <div class="top">
-                      <h1>Hours</h1>
-                      <p>Monday-Thursday: 3PM - 2AM</p>
-                      <p>Friday-Saturday: Noon - 2:30AM</p>
-                      <p>Sunday: Noon - 2AM</p>
-                </div>
-                 <div class="bottom">
-                      <h1>Contact</h1>
-                      <a href="tel:4142724222">414.272.4222</a>
-                      <a href="mailto:shakersmilwaukee@gmail.com">shakersmilwaukee@gmail.com</a>
+  </header>
 
-                </div>
-            </div>
-            <div class="right-info">
-                <div class="top">
-                      <h1>Location</h1>
-                      <p>422 S 2nd Street</p>
-                      <p>Milwaukee, WI</p>
-                </div>
-                 <div class="bottom">
-                      <h1>Shop</h1>
-                      <p>Coming Soon...</p>
-                </div>
-            </div>
-        </div>
+
+   <img src="images/about.jpg" class="mobile-image">
+
+    <h1 class="cigar-title">About</h1>
+  <div class="text-description">
+      <p>
+      Located in Milwaukee’s historic and critically-acclaimed Walker’s Point neighborhood, Shaker’s Cigar Bar has offered patrons an unique and unforgettable savoir-fare for decades. Sitting atop what was once a cemetery, this former cooperage operated as a speakeasy and brothel during Prohibition under the ownership of the legendary Capone brothers. In the 1990's, It was an occasional haunt of infamous serial killer, Jeffrey Dahmer. 
+    </p>
+    <p>
+      Proudly serving a myriad of local, national and international guests since 1986, our mission has always been to provide high-quality fare, libations, and cigars for those that wish to combine a fun and enjoyable ambiance with authentic worldly cooking, exquisite service, and an unparalleled list of vintage spirits and wine into one extraordinary experience. 
+    </p>
+    <p>
+      Whether it be our live band performances, one of our 5 quirky, guided historic and ghost tours, or an overnight stay in our brothel-turned-Airbnb, we strive to be so much more than just a “bar”, and see to it that each of our guests is captivated and enthralled the moment they walk through our doors.
+    </p>
+    <p>
+      Welcome home.
+    </p>
+  </div>
+
+
+     <hr class="footer-line-mobile">
+
+    <h1 class="brown-foot-mobile">The World's Finest Cigar Bar</h1>
+   <div class="footer-div">
+    <div>
+     <h1 class="time-mobile">Hours</h1>
+    <p class="deets-mobile">Monday-Thursday: 3PM - 2AM</p>
+    <p class="deets-mobile">Friday-Saturday: Noon - 2:30AM</p>
+    <p class="deets-mobile">Sunday: Noon - 2AM</p>
+    <h1 class="time-mobile">Contact</h1>
+    <p class="deets-mobile"><a href="tel:4142724222">414.272.4222</a></p>
+    <p class="deets-mobile"><a href="mailto:shakersmilwaukee@gmail.com">shakersmilwaukee@gmail.com</a>
+</p>
+   </div>
+    <div>
+      <h1 class="time-mobile">Location</h1>
+    <p class="deets-mobile">422 S 2nd Street</p>
+    <p class="deets-mobile">Milwaukee, WI</p>
+    <h1 class="time-mobile">Shop</h1>
+    <p class="deets-mobile">Coming Soon...</p>
     </div>
-<div class="social-icons">
-  <a href="https://www.facebook.com/shakers.milwaukee/" target="_blank">
-  <img src="images/Facebook.svg" alt="Facebook" class="icon">
-</a>
-  <img src="images/Instagram.svg" alt="Instagram" class="icon">
-</div>
-<img src="images/logo.png" alt="" class="logo-footer">
-  
-    
-<script src="script.js"></script>
+   </div>
+
+   <div class="socials">
+    <a href="https://www.facebook.com/shakers.milwaukee/" target="_blank">
+    <svg fill="#aaa"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="40px"
+	 height="40px" viewBox="0 0 512 512" xml:space="preserve">
+
+<g id="7935ec95c421cee6d86eb22ecd11b7e3">
+
+<path style="display: inline;" d="M283.122,122.174c0,5.24,0,22.319,0,46.583h83.424l-9.045,74.367h-74.379
+		c0,114.688,0,268.375,0,268.375h-98.726c0,0,0-151.653,0-268.375h-51.443v-74.367h51.443c0-29.492,0-50.463,0-56.302
+		c0-27.82-2.096-41.02,9.725-62.578C205.948,28.32,239.308-0.174,297.007,0.512c57.713,0.711,82.04,6.263,82.04,6.263
+		l-12.501,79.257c0,0-36.853-9.731-54.942-6.263C293.539,83.238,283.122,94.366,283.122,122.174z">
+
+</path>
+
+</g>
+
+</svg></a>
+
+
+<svg fill="#aaa" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 30 30">
+    <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
+</svg>
+   </div>
+
+    <div id="brand"><a href="index.html"><img src="images/logo.png"></a></div>
+   
+
+  <script src="script.js"></script>
 </body>
 </html>

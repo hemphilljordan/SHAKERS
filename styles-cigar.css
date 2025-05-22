@@ -504,4 +504,9 @@ header a:hover {
     text-align: center;
   }
 
+.cocktail-menu {
+  display: block;
+}
+
+
 }
