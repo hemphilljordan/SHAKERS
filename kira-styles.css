@@ -376,6 +376,7 @@ ul li {
 
   .footer-div {
     gap: 0;
+    display: block;
   }
 
   header nav {
