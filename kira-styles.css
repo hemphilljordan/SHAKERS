@@ -65,6 +65,33 @@ header {
     padding: 20px;
 }
 
+.cigar-title {
+      font-family: 'Cardo', serif;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cigar-title::after {
+  content: '';
+  display: block;
+  margin: 20px auto 0 auto;
+  width: 120px; /* Adjust width to match from 'I' to 'A' */
+  height: 1px; /* Thin line */
+  background-color: black;
+}
+
+.text-description p {
+  max-width: 600px;  /* Limit how wide the text stretches */
+  margin: 40px auto;    /* Center the paragraph */
+  padding: 0 20px;   /* Optional: side padding for mobile */
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 2;
+  font-size: 16px;
+}
+
 .title {
     font-family: 'Cardo';
     font-size: 48px;
@@ -135,7 +162,9 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: rgba(99, 101, 102, 0.5);
 }
 
 ul a {
@@ -226,9 +255,58 @@ ul li {
     margin-top: 20px;
 }
 
+.footer-div {
+    display: flex;
+  justify-content: center; /* centers the content horizontally */
+  gap: 180px; /* optional: space between the divs */
+  flex-wrap: wrap; /* optional: allows stacking on smaller screens */
+  padding: 20px;
+  text-align: left;
+}
+
+.socials {
+  width: fit-content; /* or a set width like 200px */
+  margin: 0 auto;
+}
+
+.socials svg {
+  margin: 0 20px;
+  cursor: pointer;
+  filter: grayscale(100%) brightness(70%); /* makes icons grey */
+  transition: filter 0.3s ease;
+}
+
+.socials svg:hover {
+  filter: grayscale(0%) brightness(0%); /* color on hover */
+}
+
+
+
+
+
+.cigar-section p {
+  padding: 0 280px;
+  line-height: 35px;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.title {
+  margin: 30px 0;
+}
+
+
 
 @media (max-width: 768px) {
 
+  .cigar-section p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .footer-div {
+    gap: 0;
+  }
 
   header nav {
     display: none;
@@ -241,6 +319,10 @@ ul li {
   .header-links {
     display: none;
   }
+
+  .cigar-section p {
+  padding: 0;
+}
   
   } 
 
