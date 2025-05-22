@@ -380,7 +380,7 @@ header a:hover {
 
 .hamburger {
   display: none;
-  font-size: 28px;
+  font-size: 58px;
   background: none;
   border: none;
   cursor: pointer;
@@ -389,6 +389,12 @@ header a:hover {
 
 /* Mobile styles: hide menu, show hamburger */
 @media (max-width: 768px) {
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
   .menu {
     display: none;
     flex-direction: column;
@@ -435,11 +441,12 @@ header a:hover {
 
 .main {
   width: 100vw;
+  display: block;
 }
 
 .main-image img{
   width: 100vw;
-    display: block;
+  display: block;
   margin: 0 auto;
 }
 
@@ -448,7 +455,7 @@ header a:hover {
  .cigars {
     flex-direction: column; 
     align-items: center;
-    padding: 40px 20px;
+    padding: 0;
     text-align: center;
     width: 100vw;
      box-sizing: border-box;

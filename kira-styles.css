@@ -6,7 +6,7 @@
 }
 
 body {
-  background-size: cover; /
+  background-size: cover; 
   background-repeat: no-repeat; 
   background-attachment: fixed; 
   background-position: center center; 
@@ -153,6 +153,16 @@ ul li {
 }
 
 
+.hamburger {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 44px;
+  cursor: pointer;
+  z-index: 1001;
+}
 
 
 
@@ -163,8 +173,6 @@ ul li {
   cursor: pointer;
   z-index: 1;
 }
-
-
 
 #hamburger-icon div{
   width: 35px;
@@ -218,7 +226,9 @@ ul li {
     margin-top: 20px;
 }
 
+
 @media (max-width: 768px) {
+
 
   header nav {
     display: none;
