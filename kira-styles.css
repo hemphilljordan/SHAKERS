@@ -309,7 +309,20 @@ ul li {
   transition: none;
 }
 
+  .cigar-list {
+    display: flex;
+    gap: 2rem;
+    margin: 20px auto;
+    justify-content: center;
+  }
 
+  .cigar-list ul {
+     list-style-position: inside; /* Optional: bullet inside */
+  padding-left: 20px;           /* standard indentation */
+  columns: auto;                /* or just don't use columns at all */
+  display: block;  
+  text-align: center;
+  }
 
 
 
@@ -364,10 +377,28 @@ ul li {
   margin: 0.25rem 0 1rem 0;
 }
 
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em; /* optional spacing */
+  margin-top: 30px;
+}
+
+.tour-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3em; /* optional spacing */
+  margin-top: -50px;
+}
 
 
 
 @media (max-width: 768px) {
+
+  .video-wrapper, iframe {
+    width: 100vw;
+    height: auto;
+  }
 
   .cigar-section p {
     font-size: 14px;
